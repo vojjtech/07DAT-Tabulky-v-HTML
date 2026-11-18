@@ -75,7 +75,6 @@ Vzhled stránky je hotový, doplňujete jen sekci **VZHLED TABULKY**. Rozměry j
 | `--color-prices-bg` | `#f2f9fb` | pozadí cenových sloupců |
 | `--color-zebra` | `rgba(11, 110, 138, 0.08)` | sudé řádky |
 | `--color-tfoot-bg` | `#e3f1f6` | pozadí patičky |
-| `--color-hover` | `rgba(11, 110, 138, 0.18)` | řádek pod myší (bonus) |
 
 6. **Tabulka:** šířka 100 %, okraje sousedních buněk slité do jedné čáry (`border-collapse`).
 7. **Titulek:** nad tabulkou (`caption-side`), zarovnaný vlevo, velikost `1.2rem`, tučně, odsazení dole `12px`.
@@ -91,11 +90,6 @@ Vzhled stránky je hotový, doplňujete jen sekci **VZHLED TABULKY**. Rozměry j
 11. **Skupiny řádků a patička:**
     - `tbody`, které následuje po jiném `tbody` (selektor `tbody + tbody`): horní okraj `3px solid` v barvě `--color-primary`,
     - `tfoot`: horní okraj `3px double` v barvě `--color-primary`, tučné písmo, pozadí `--color-tfoot-bg`.
-
-**Bonus (když zbude čas):**
-
-- řádek v `tbody` pod myší zvýrazněte pozadím `--color-hover`,
-- čísla v `td` vysázejte se stejně širokými číslicemi (`font-variant-numeric: tabular-nums`).
 
 ## Kontrolní seznam
 
