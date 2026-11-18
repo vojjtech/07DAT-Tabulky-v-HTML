@@ -1,0 +1,142 @@
+/* =========================================================
+   BARVY – hotové, neměňte
+   CSS proměnné; v části B je používejte přes var(--nazev),
+   např. color: var(--color-white);
+   ========================================================= */
+
+:root {
+  /* stránka */
+  --color-primary: #0b6e8a;                 /* hlavní barva: banner, hlavička tabulky, silné čáry */
+  --color-primary-light: #cfe8f0;           /* podtitul v banneru */
+  --color-white: #ffffff;                   /* text na hlavní barvě, pozadí karty */
+  --color-text: #1d2b36;                    /* běžný text */
+  --color-text-muted: #4a5c68;              /* méně důležitý text */
+  --color-page-bg: #eef4f7;                 /* pozadí stránky */
+  --color-shadow: rgba(0, 0, 0, 0.08);      /* stín karty */
+
+  /* tabulka */
+  --color-border: #c5d5de;                  /* rámečky buněk */
+  --color-prices-bg: #f2f9fb;               /* pozadí cenových sloupců */
+  --color-zebra: rgba(11, 110, 138, 0.08);  /* sudé řádky (poloprůhledné) */
+  --color-tfoot-bg: #e3f1f6;                /* pozadí patičky */
+}
+
+
+/* =========================================================
+   VZHLED STRÁNKY – hotové, neměňte
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-page-bg);
+}
+
+.banner {
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.banner-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.banner-subtitle {
+  margin: 4px 0 0;
+  color: var(--color-primary-light);
+}
+
+.content {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.card {
+  padding: 24px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.card h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+.intro {
+  margin: 0 0 24px;
+  color: var(--color-text-muted);
+}
+
+/* Obal tabulky: na úzkém displeji se tabulka posouvá do strany
+   a nerozbije stránku (responzivní tabulka). */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.note {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.site-footer {
+  padding: 0 16px 16px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+
+/* =========================================================
+   VZHLED TABULKY – část B (úkoly 6–11, podrobně v ZADANI.md)
+   ========================================================= */
+
+/* 6. Tabulka
+   - šířka 100 %
+   - okraje sousedních buněk slité do jedné čáry (border-collapse) */
+
+
+/* 7. Titulek (caption)
+   - nad tabulkou (caption-side)
+   - zarovnaný vlevo, velikost 1.2rem, tučně
+   - odsazení dole 12px */
+
+
+/* 8. Buňky (th, td)
+   - rámeček 1px solid var(--color-border)
+   - vnitřní odsazení 8px 12px */
+
+
+/* 9. Záhlaví
+   - th v thead: pozadí var(--color-primary), písmo var(--color-white),
+     zarovnání na střed
+   - th v tbody a tfoot: zarovnání vlevo
+   - sloučené buňky zón, selektor th[scope="rowgroup"]: svisle nahoru */
+
+
+/* 10. Čísla, sloupce a zebra
+   - td: zarovnání vpravo
+   - col.prices: pozadí var(--color-prices-bg)
+   - sudé řádky v tbody (zebra): pozadí var(--color-zebra) */
+
+
+/* 11. Skupiny řádků a patička
+   - tbody, které následuje po jiném tbody (tbody + tbody):
+     horní okraj 3px solid var(--color-primary)
+   - tfoot: horní okraj 3px double var(--color-primary), tučné písmo,
+     pozadí var(--color-tfoot-bg) */
+
+
